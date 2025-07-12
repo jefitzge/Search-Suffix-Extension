@@ -1,4 +1,8 @@
 {
+  "manifest_version": 3,
+  "name": "Search Suffix Extension",
+  "version": "0.0.1",
+  "description": "Automatically append custom text to search queries in new tabs",
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
@@ -7,5 +11,15 @@
         "https://developer.chrome.com/docs/webstore/*"
       ]
     }
-  ]
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Search Suffix Settings"
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "64": "images/icon-64.png",
+    "128": "images/icon-128.png"
+  }
 }
